@@ -1,0 +1,6110 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__0", 
+      "attrs": {"scalar": "31.875"}, 
+      "inputs": [[0, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round0", 
+      "inputs": [[1, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip0", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[2, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast0", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[3, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "data_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[4, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm0_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__1", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[6, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round1", 
+      "inputs": [[7, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip1", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[8, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast1", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[9, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm0_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[10, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm0_a_mul_data_quantized", 
+      "inputs": [[5, 0, 0], [11, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__0", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[12, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm0_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[13, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm0_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[14, 0, 0]]
+    }, 
+    {
+      "op": "copy", 
+      "name": "copy0", 
+      "inputs": [[15, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm0_a_mul_data_cast_skip_add_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[16, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_conv0_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__2", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[18, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round2", 
+      "inputs": [[19, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip2", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[20, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast2", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[21, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_conv0_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[22, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d0", 
+      "attrs": {
+        "channels": "64", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[7, 7]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(3, 3)", 
+        "strides": "(2, 2)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[17, 0, 0], [23, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__1", 
+      "attrs": {"scalar": "11"}, 
+      "inputs": [[24, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d0_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[25, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d0_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[26, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d0_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[27, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm1_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__3", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[29, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round3", 
+      "inputs": [[30, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip3", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[31, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast3", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[32, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm1_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[33, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm1_a_mul_data_quantized", 
+      "inputs": [[28, 0, 0], [34, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__2", 
+      "attrs": {"scalar": "4"}, 
+      "inputs": [[35, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm1_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[36, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm1_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[37, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm1_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[38, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__0", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[39, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm1_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__4", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[41, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round4", 
+      "inputs": [[42, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip4", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[43, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast4", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[44, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm1_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[45, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm1_out_quantized", 
+      "inputs": [[40, 0, 0], [46, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__3", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[47, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm1_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[48, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm1_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[49, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm1_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[50, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu0", 
+      "inputs": [[51, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu0_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[52, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu0_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[53, 0, 0]]
+    }, 
+    {
+      "op": "max_pool2d", 
+      "name": "max_pool2d0", 
+      "attrs": {
+        "ceil_mode": "False", 
+        "padding": "(1, 1)", 
+        "pool_size": "[3, 3]", 
+        "strides": "(2, 2)"
+      }, 
+      "inputs": [[54, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "max_pool2d0_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[55, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm2_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__5", 
+      "attrs": {"scalar": "15.9375"}, 
+      "inputs": [[57, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round5", 
+      "inputs": [[58, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip5", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[59, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast5", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[60, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm2_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[61, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm2_a_mul_data_quantized", 
+      "inputs": [[56, 0, 0], [62, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__4", 
+      "attrs": {"scalar": "3"}, 
+      "inputs": [[63, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm2_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[64, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm2_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[65, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm2_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[66, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__1", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[67, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm2_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__6", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[69, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round6", 
+      "inputs": [[70, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip6", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[71, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast6", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[72, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm2_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[73, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm2_out_quantized", 
+      "inputs": [[68, 0, 0], [74, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__5", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[75, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm2_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[76, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm2_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[77, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm2_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[78, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu1", 
+      "inputs": [[79, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu1_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[80, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu1_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[81, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu1_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[82, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage1_conv0_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__7", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[84, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round7", 
+      "inputs": [[85, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip7", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[86, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast7", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[87, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage1_conv0_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[88, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d1", 
+      "attrs": {
+        "channels": "64", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[83, 0, 0], [89, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__6", 
+      "attrs": {"scalar": "9"}, 
+      "inputs": [[90, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d1_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[91, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d1_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[92, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d1_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[93, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm3_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__8", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[95, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round8", 
+      "inputs": [[96, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip8", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[97, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast8", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[98, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm3_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[99, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm3_a_mul_data_quantized", 
+      "inputs": [[94, 0, 0], [100, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__7", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[101, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm3_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[102, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm3_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[103, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm3_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[104, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__2", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[105, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm3_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__9", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[107, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round9", 
+      "inputs": [[108, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip9", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[109, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast9", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[110, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm3_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[111, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm3_out_quantized", 
+      "inputs": [[106, 0, 0], [112, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__8", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[113, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm3_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[114, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm3_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[115, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm3_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[116, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu2", 
+      "inputs": [[117, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__3", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[118, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu2_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[119, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu2_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[120, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu2_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[121, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage1_conv1_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__10", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[123, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round10", 
+      "inputs": [[124, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip10", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[125, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast10", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[126, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage1_conv1_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[127, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d2", 
+      "attrs": {
+        "channels": "64", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[122, 0, 0], [128, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__9", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[129, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d2_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[130, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d2_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[131, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d2_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[132, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "max_pool2d0_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[55, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add0_quantized", 
+      "inputs": [[133, 0, 0], [134, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add0_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[135, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add0_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[136, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add0_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[137, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm4_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__11", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[139, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round11", 
+      "inputs": [[140, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip11", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[141, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast11", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[142, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm4_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[143, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm4_a_mul_data_quantized", 
+      "inputs": [[138, 0, 0], [144, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__10", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[145, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm4_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[146, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm4_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[147, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm4_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[148, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__4", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[149, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm4_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__12", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[151, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round12", 
+      "inputs": [[152, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip12", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[153, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast12", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[154, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm4_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[155, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm4_out_quantized", 
+      "inputs": [[150, 0, 0], [156, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__11", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[157, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm4_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[158, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm4_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[159, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm4_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[160, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu3", 
+      "inputs": [[161, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__5", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[162, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu3_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[163, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu3_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[164, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu3_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[165, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage1_conv2_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__13", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[167, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round13", 
+      "inputs": [[168, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip13", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[169, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast13", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[170, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage1_conv2_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[171, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d3", 
+      "attrs": {
+        "channels": "64", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[166, 0, 0], [172, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__12", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[173, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d3_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[174, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d3_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[175, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d3_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[176, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm5_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__14", 
+      "attrs": {"scalar": "31.875"}, 
+      "inputs": [[178, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round14", 
+      "inputs": [[179, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip14", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[180, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast14", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[181, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm5_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[182, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm5_a_mul_data_quantized", 
+      "inputs": [[177, 0, 0], [183, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__13", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[184, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm5_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[185, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm5_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[186, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm5_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[187, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__6", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[188, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm5_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__15", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[190, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round15", 
+      "inputs": [[191, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip15", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[192, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast15", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[193, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm5_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[194, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm5_out_quantized", 
+      "inputs": [[189, 0, 0], [195, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__14", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[196, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm5_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[197, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm5_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[198, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm5_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[199, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu4", 
+      "inputs": [[200, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__7", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[201, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu4_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[202, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu4_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[203, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu4_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[204, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage1_conv3_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__16", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[206, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round16", 
+      "inputs": [[207, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip16", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[208, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast16", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[209, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage1_conv3_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[210, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d4", 
+      "attrs": {
+        "channels": "64", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[205, 0, 0], [211, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__15", 
+      "attrs": {"scalar": "9"}, 
+      "inputs": [[212, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d4_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[213, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d4_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[214, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d4_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[215, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add0_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[137, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add1_quantized", 
+      "inputs": [[216, 0, 0], [217, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__16", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[218, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add1_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[219, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add1_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[220, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add1_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[221, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm6_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__17", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[223, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round17", 
+      "inputs": [[224, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip17", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[225, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast17", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[226, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm6_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[227, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm6_a_mul_data_quantized", 
+      "inputs": [[222, 0, 0], [228, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__17", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[229, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm6_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[230, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm6_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[231, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm6_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[232, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__8", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[233, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm6_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__18", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[235, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round18", 
+      "inputs": [[236, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip18", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[237, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast18", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[238, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm6_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[239, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm6_out_quantized", 
+      "inputs": [[234, 0, 0], [240, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__18", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[241, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm6_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[242, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm6_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[243, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm6_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[244, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu5", 
+      "inputs": [[245, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu5_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[246, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu5_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[247, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu5_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[248, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage2_conv0_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__19", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[250, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round19", 
+      "inputs": [[251, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip19", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[252, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast19", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[253, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage2_conv0_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[254, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d5", 
+      "attrs": {
+        "channels": "128", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(2, 2)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[249, 0, 0], [255, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__19", 
+      "attrs": {"scalar": "7"}, 
+      "inputs": [[256, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d5_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[257, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d5_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[258, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d5_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[259, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm7_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__20", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[261, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round20", 
+      "inputs": [[262, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip20", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[263, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast20", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[264, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm7_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[265, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm7_a_mul_data_quantized", 
+      "inputs": [[260, 0, 0], [266, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__20", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[267, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm7_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[268, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm7_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[269, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm7_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[270, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__9", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[271, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm7_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__21", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[273, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round21", 
+      "inputs": [[274, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip21", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[275, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast21", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[276, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm7_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[277, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm7_out_quantized", 
+      "inputs": [[272, 0, 0], [278, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__21", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[279, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm7_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[280, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm7_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[281, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm7_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[282, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu6", 
+      "inputs": [[283, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu6_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[284, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu6_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[285, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu6_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[286, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage2_conv1_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__22", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[288, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round22", 
+      "inputs": [[289, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip22", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[290, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast22", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[291, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage2_conv1_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[292, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d6", 
+      "attrs": {
+        "channels": "128", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[287, 0, 0], [293, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__22", 
+      "attrs": {"scalar": "9"}, 
+      "inputs": [[294, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d6_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[295, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d6_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[296, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d6_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[297, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__10", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[298, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu5_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[248, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage2_conv2_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__23", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[301, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round23", 
+      "inputs": [[302, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip23", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[303, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast23", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[304, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage2_conv2_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[305, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d7", 
+      "attrs": {
+        "channels": "128", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[1, 1]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(0, 0)", 
+        "strides": "(2, 2)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[300, 0, 0], [306, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__23", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[307, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d7_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[308, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d7_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[309, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d7_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[310, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add2_quantized", 
+      "inputs": [[299, 0, 0], [311, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__24", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[312, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add2_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[313, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add2_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[314, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add2_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[315, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm8_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__24", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[317, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round24", 
+      "inputs": [[318, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip24", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[319, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast24", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[320, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm8_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[321, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm8_a_mul_data_quantized", 
+      "inputs": [[316, 0, 0], [322, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__25", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[323, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm8_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[324, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm8_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[325, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm8_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[326, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__11", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[327, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm8_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__25", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[329, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round25", 
+      "inputs": [[330, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip25", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[331, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast25", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[332, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm8_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[333, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm8_out_quantized", 
+      "inputs": [[328, 0, 0], [334, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm8_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[335, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm8_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[336, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm8_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[337, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu7", 
+      "inputs": [[338, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu7_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[339, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu7_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[340, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu7_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[341, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage2_conv3_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__26", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[343, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round26", 
+      "inputs": [[344, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip26", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[345, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast26", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[346, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage2_conv3_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[347, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d8", 
+      "attrs": {
+        "channels": "128", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[342, 0, 0], [348, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__26", 
+      "attrs": {"scalar": "9"}, 
+      "inputs": [[349, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d8_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[350, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d8_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[351, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d8_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[352, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm9_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__27", 
+      "attrs": {"scalar": "31.875"}, 
+      "inputs": [[354, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round27", 
+      "inputs": [[355, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip27", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[356, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast27", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[357, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm9_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[358, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm9_a_mul_data_quantized", 
+      "inputs": [[353, 0, 0], [359, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__27", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[360, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm9_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[361, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm9_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[362, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm9_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[363, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__12", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[364, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm9_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__28", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[366, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round28", 
+      "inputs": [[367, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip28", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[368, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast28", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[369, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm9_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[370, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm9_out_quantized", 
+      "inputs": [[365, 0, 0], [371, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__28", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[372, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm9_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[373, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm9_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[374, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm9_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[375, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu8", 
+      "inputs": [[376, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu8_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[377, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu8_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[378, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu8_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[379, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage2_conv4_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__29", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[381, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round29", 
+      "inputs": [[382, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip29", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[383, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast29", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[384, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage2_conv4_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[385, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d9", 
+      "attrs": {
+        "channels": "128", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[380, 0, 0], [386, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__29", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[387, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d9_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[388, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d9_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[389, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d9_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[390, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add2_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[315, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add3_quantized", 
+      "inputs": [[391, 0, 0], [392, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add3_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[393, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add3_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[394, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add3_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[395, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm10_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__30", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[397, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round30", 
+      "inputs": [[398, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip30", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[399, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast30", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[400, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm10_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[401, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm10_a_mul_data_quantized", 
+      "inputs": [[396, 0, 0], [402, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__30", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[403, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm10_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[404, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm10_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[405, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm10_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[406, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__13", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[407, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm10_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__31", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[409, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round31", 
+      "inputs": [[410, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip31", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[411, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast31", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[412, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm10_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[413, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm10_out_quantized", 
+      "inputs": [[408, 0, 0], [414, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__31", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[415, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm10_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[416, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm10_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[417, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm10_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[418, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu9", 
+      "inputs": [[419, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu9_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[420, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu9_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[421, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu9_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[422, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage3_conv0_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__32", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[424, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round32", 
+      "inputs": [[425, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip32", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[426, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast32", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[427, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage3_conv0_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[428, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d10", 
+      "attrs": {
+        "channels": "256", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(2, 2)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[423, 0, 0], [429, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__32", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[430, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d10_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[431, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d10_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[432, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d10_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[433, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm11_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__33", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[435, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round33", 
+      "inputs": [[436, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip33", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[437, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast33", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[438, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm11_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[439, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm11_a_mul_data_quantized", 
+      "inputs": [[434, 0, 0], [440, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__33", 
+      "attrs": {"scalar": "7"}, 
+      "inputs": [[441, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm11_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[442, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm11_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[443, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm11_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[444, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__14", 
+      "attrs": {"scalar": "3"}, 
+      "inputs": [[445, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm11_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__34", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[447, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round34", 
+      "inputs": [[448, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip34", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[449, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast34", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[450, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm11_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[451, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm11_out_quantized", 
+      "inputs": [[446, 0, 0], [452, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__34", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[453, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm11_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[454, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm11_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[455, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm11_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[456, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu10", 
+      "inputs": [[457, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu10_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[458, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu10_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[459, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu10_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[460, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage3_conv1_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__35", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[462, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round35", 
+      "inputs": [[463, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip35", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[464, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast35", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[465, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage3_conv1_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[466, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d11", 
+      "attrs": {
+        "channels": "256", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[461, 0, 0], [467, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__35", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[468, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d11_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[469, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d11_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[470, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d11_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[471, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__15", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[472, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu9_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[422, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage3_conv2_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__36", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[475, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round36", 
+      "inputs": [[476, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip36", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[477, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast36", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[478, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage3_conv2_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[479, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d12", 
+      "attrs": {
+        "channels": "256", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[1, 1]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(0, 0)", 
+        "strides": "(2, 2)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[474, 0, 0], [480, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__36", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[481, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d12_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[482, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d12_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[483, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d12_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[484, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add4_quantized", 
+      "inputs": [[473, 0, 0], [485, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__37", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[486, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add4_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[487, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add4_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[488, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add4_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[489, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm12_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__37", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[491, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round37", 
+      "inputs": [[492, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip37", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[493, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast37", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[494, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm12_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[495, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm12_a_mul_data_quantized", 
+      "inputs": [[490, 0, 0], [496, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__38", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[497, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm12_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[498, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm12_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[499, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm12_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[500, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__16", 
+      "attrs": {"scalar": "3"}, 
+      "inputs": [[501, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm12_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__38", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[503, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round38", 
+      "inputs": [[504, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip38", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[505, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast38", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[506, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm12_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[507, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm12_out_quantized", 
+      "inputs": [[502, 0, 0], [508, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__39", 
+      "attrs": {"scalar": "3"}, 
+      "inputs": [[509, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm12_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[510, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm12_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[511, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm12_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[512, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu11", 
+      "inputs": [[513, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu11_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[514, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu11_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[515, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu11_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[516, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage3_conv3_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__39", 
+      "attrs": {"scalar": "510.0"}, 
+      "inputs": [[518, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round39", 
+      "inputs": [[519, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip39", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[520, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast39", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[521, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage3_conv3_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[522, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d13", 
+      "attrs": {
+        "channels": "256", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[517, 0, 0], [523, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__40", 
+      "attrs": {"scalar": "9"}, 
+      "inputs": [[524, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d13_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[525, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d13_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[526, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d13_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[527, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm13_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__40", 
+      "attrs": {"scalar": "31.875"}, 
+      "inputs": [[529, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round40", 
+      "inputs": [[530, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip40", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[531, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast40", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[532, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm13_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[533, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm13_a_mul_data_quantized", 
+      "inputs": [[528, 0, 0], [534, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__41", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[535, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm13_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[536, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm13_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[537, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm13_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[538, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__17", 
+      "attrs": {"scalar": "3"}, 
+      "inputs": [[539, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm13_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__41", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[541, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round41", 
+      "inputs": [[542, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip41", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[543, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast41", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[544, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm13_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[545, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm13_out_quantized", 
+      "inputs": [[540, 0, 0], [546, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__42", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[547, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm13_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[548, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm13_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[549, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm13_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[550, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu12", 
+      "inputs": [[551, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu12_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[552, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu12_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[553, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu12_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[554, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage3_conv4_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__42", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[556, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round42", 
+      "inputs": [[557, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip42", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[558, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast42", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[559, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage3_conv4_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[560, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d14", 
+      "attrs": {
+        "channels": "256", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[555, 0, 0], [561, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__43", 
+      "attrs": {"scalar": "7"}, 
+      "inputs": [[562, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d14_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[563, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d14_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[564, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d14_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[565, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add4_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[489, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__18", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[567, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add5_quantized", 
+      "inputs": [[566, 0, 0], [568, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__44", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[569, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add5_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[570, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add5_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[571, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add5_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[572, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm14_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__43", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[574, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round43", 
+      "inputs": [[575, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip43", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[576, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast43", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[577, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm14_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[578, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm14_a_mul_data_quantized", 
+      "inputs": [[573, 0, 0], [579, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__45", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[580, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm14_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[581, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm14_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[582, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm14_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[583, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__19", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[584, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm14_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__44", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[586, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round44", 
+      "inputs": [[587, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip44", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[588, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast44", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[589, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm14_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[590, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm14_out_quantized", 
+      "inputs": [[585, 0, 0], [591, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__46", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[592, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm14_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[593, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm14_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[594, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm14_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[595, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu13", 
+      "inputs": [[596, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu13_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[597, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu13_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[598, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu13_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[599, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage4_conv0_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__45", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[601, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round45", 
+      "inputs": [[602, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip45", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[603, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast45", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[604, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage4_conv0_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[605, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d15", 
+      "attrs": {
+        "channels": "512", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(2, 2)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[600, 0, 0], [606, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__47", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[607, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d15_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[608, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d15_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[609, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d15_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[610, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm15_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__46", 
+      "attrs": {"scalar": "31.875"}, 
+      "inputs": [[612, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round46", 
+      "inputs": [[613, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip46", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[614, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast46", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[615, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm15_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[616, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm15_a_mul_data_quantized", 
+      "inputs": [[611, 0, 0], [617, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__48", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[618, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm15_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[619, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm15_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[620, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm15_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[621, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__20", 
+      "attrs": {"scalar": "3"}, 
+      "inputs": [[622, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm15_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__47", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[624, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round47", 
+      "inputs": [[625, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip47", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[626, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast47", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[627, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm15_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[628, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm15_out_quantized", 
+      "inputs": [[623, 0, 0], [629, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__49", 
+      "attrs": {"scalar": "3"}, 
+      "inputs": [[630, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm15_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[631, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm15_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[632, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm15_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[633, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu14", 
+      "inputs": [[634, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu14_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[635, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu14_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[636, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu14_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[637, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage4_conv1_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__48", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[639, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round48", 
+      "inputs": [[640, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip48", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[641, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast48", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[642, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage4_conv1_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[643, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d16", 
+      "attrs": {
+        "channels": "512", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[638, 0, 0], [644, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__50", 
+      "attrs": {"scalar": "7"}, 
+      "inputs": [[645, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d16_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[646, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d16_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[647, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d16_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[648, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__21", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[649, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu13_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[599, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage4_conv2_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__49", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[652, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round49", 
+      "inputs": [[653, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip49", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[654, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast49", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[655, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage4_conv2_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[656, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d17", 
+      "attrs": {
+        "channels": "512", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[1, 1]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(0, 0)", 
+        "strides": "(2, 2)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[651, 0, 0], [657, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__51", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[658, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d17_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[659, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d17_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[660, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d17_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[661, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add6_quantized", 
+      "inputs": [[650, 0, 0], [662, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__52", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[663, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add6_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[664, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add6_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[665, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add6_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[666, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm16_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__50", 
+      "attrs": {"scalar": "15.9375"}, 
+      "inputs": [[668, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round50", 
+      "inputs": [[669, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip50", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[670, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast50", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[671, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm16_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[672, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm16_a_mul_data_quantized", 
+      "inputs": [[667, 0, 0], [673, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__53", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[674, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm16_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[675, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm16_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[676, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm16_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[677, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__22", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[678, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm16_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__51", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[680, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round51", 
+      "inputs": [[681, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip51", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[682, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast51", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[683, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm16_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[684, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm16_out_quantized", 
+      "inputs": [[679, 0, 0], [685, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__54", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[686, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm16_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[687, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm16_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[688, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm16_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[689, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu15", 
+      "inputs": [[690, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu15_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[691, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu15_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[692, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu15_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[693, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage4_conv3_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__52", 
+      "attrs": {"scalar": "255.0"}, 
+      "inputs": [[695, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round52", 
+      "inputs": [[696, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip52", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[697, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast52", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[698, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage4_conv3_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[699, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d18", 
+      "attrs": {
+        "channels": "512", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[694, 0, 0], [700, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__55", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[701, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d18_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[702, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d18_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[703, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d18_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[704, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm17_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__53", 
+      "attrs": {"scalar": "31.875"}, 
+      "inputs": [[706, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round53", 
+      "inputs": [[707, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip53", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[708, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast53", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[709, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm17_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[710, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm17_a_mul_data_quantized", 
+      "inputs": [[705, 0, 0], [711, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__56", 
+      "attrs": {"scalar": "5"}, 
+      "inputs": [[712, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm17_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[713, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm17_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[714, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm17_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[715, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__23", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[716, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm17_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__54", 
+      "attrs": {"scalar": "63.75"}, 
+      "inputs": [[718, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round54", 
+      "inputs": [[719, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip54", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[720, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast54", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[721, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm17_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[722, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm17_out_quantized", 
+      "inputs": [[717, 0, 0], [723, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__57", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[724, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm17_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[725, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm17_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[726, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm17_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[727, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu16", 
+      "inputs": [[728, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu16_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[729, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu16_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[730, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu16_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[731, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_stage4_conv4_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__55", 
+      "attrs": {"scalar": "510.0"}, 
+      "inputs": [[733, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round55", 
+      "inputs": [[734, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip55", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[735, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast55", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[736, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_stage4_conv4_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[737, 0, 0]]
+    }, 
+    {
+      "op": "conv2d", 
+      "name": "conv2d19", 
+      "attrs": {
+        "channels": "512", 
+        "dilation": "(1, 1)", 
+        "groups": "1", 
+        "kernel_size": "[3, 3]", 
+        "layout": "NCHW", 
+        "out_dtype": "int32", 
+        "padding": "(1, 1)", 
+        "strides": "(1, 1)", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[732, 0, 0], [738, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__58", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[739, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "conv2d19_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[740, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d19_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[741, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "conv2d19_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[742, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add6_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[666, 0, 0]]
+    }, 
+    {
+      "op": "elemwise_add", 
+      "name": "elemwise_add7_quantized", 
+      "inputs": [[743, 0, 0], [744, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "elemwise_add7_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[745, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add7_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[746, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "elemwise_add7_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[747, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm18_gamma_mul_div_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__56", 
+      "attrs": {"scalar": "7.96875"}, 
+      "inputs": [[749, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round56", 
+      "inputs": [[750, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip56", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[751, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast56", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[752, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm18_gamma_mul_div_expand_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[753, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_mul", 
+      "name": "batch_norm18_a_mul_data_quantized", 
+      "inputs": [[748, 0, 0], [754, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__59", 
+      "attrs": {"scalar": "6"}, 
+      "inputs": [[755, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm18_a_mul_data_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[756, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm18_a_mul_data_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[757, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm18_a_mul_data_cast_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[758, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__24", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[759, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batch_norm18_add_beta_expand", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__57", 
+      "attrs": {"scalar": "31.875"}, 
+      "inputs": [[761, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round57", 
+      "inputs": [[762, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip57", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[763, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast57", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[764, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm18_add_beta_expand_quantized_cast", 
+      "attrs": {"dtype": "int16"}, 
+      "inputs": [[765, 0, 0]]
+    }, 
+    {
+      "op": "broadcast_add", 
+      "name": "batch_norm18_out_quantized", 
+      "inputs": [[760, 0, 0], [766, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__60", 
+      "attrs": {"scalar": "2"}, 
+      "inputs": [[767, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "batch_norm18_out_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[768, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm18_out_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[769, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "batch_norm18_out_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[770, 0, 0]]
+    }, 
+    {
+      "op": "relu", 
+      "name": "relu17", 
+      "inputs": [[771, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "relu17_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[772, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu17_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[773, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "relu17_cast_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[774, 0, 0]]
+    }, 
+    {
+      "op": "global_avg_pool2d", 
+      "name": "global_avg_pool2d0", 
+      "inputs": [[775, 0, 0]]
+    }, 
+    {
+      "op": "__lshift_scalar__", 
+      "name": "__lshift_scalar__25", 
+      "attrs": {"scalar": "1"}, 
+      "inputs": [[776, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "global_avg_pool2d0_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[777, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "global_avg_pool2d0_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[778, 0, 0]]
+    }, 
+    {
+      "op": "reshape", 
+      "name": "reshape0", 
+      "attrs": {"shape": "(0, -1)"}, 
+      "inputs": [[779, 0, 0]]
+    }, 
+    {
+      "op": "flatten", 
+      "name": "flatten0", 
+      "inputs": [[780, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "flatten0_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[781, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast59", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[782, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "resnetv20_dense0_weight", 
+      "inputs": []
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__58", 
+      "attrs": {"scalar": "127.5"}, 
+      "inputs": [[784, 0, 0]]
+    }, 
+    {
+      "op": "round", 
+      "name": "round58", 
+      "inputs": [[785, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "clip58", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[786, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast58", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[787, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "resnetv20_dense0_weight_quantized_cast", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[788, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast60", 
+      "attrs": {"dtype": "int32"}, 
+      "inputs": [[789, 0, 0]]
+    }, 
+    {
+      "op": "dense", 
+      "name": "dense0", 
+      "attrs": {
+        "units": "1000", 
+        "use_bias": "False"
+      }, 
+      "inputs": [[783, 0, 0], [790, 0, 0]]
+    }, 
+    {
+      "op": "__rshift_scalar__", 
+      "name": "__rshift_scalar__61", 
+      "attrs": {"scalar": "8"}, 
+      "inputs": [[791, 0, 0]]
+    }, 
+    {
+      "op": "clip", 
+      "name": "dense0_clip", 
+      "attrs": {
+        "a_max": "127", 
+        "a_min": "-127"
+      }, 
+      "inputs": [[792, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "dense0_cast", 
+      "attrs": {"dtype": "int8"}, 
+      "inputs": [[793, 0, 0]]
+    }, 
+    {
+      "op": "copy", 
+      "name": "copy1", 
+      "inputs": [[794, 0, 0]]
+    }, 
+    {
+      "op": "cast", 
+      "name": "cast61", 
+      "attrs": {"dtype": "float32"}, 
+      "inputs": [[795, 0, 0]]
+    }, 
+    {
+      "op": "__mul_scalar__", 
+      "name": "__mul_scalar__59", 
+      "attrs": {"scalar": "0.125490196078"}, 
+      "inputs": [[796, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [
+    0, 
+    6, 
+    18, 
+    29, 
+    41, 
+    57, 
+    69, 
+    84, 
+    95, 
+    107, 
+    123, 
+    139, 
+    151, 
+    167, 
+    178, 
+    190, 
+    206, 
+    223, 
+    235, 
+    250, 
+    261, 
+    273, 
+    288, 
+    301, 
+    317, 
+    329, 
+    343, 
+    354, 
+    366, 
+    381, 
+    397, 
+    409, 
+    424, 
+    435, 
+    447, 
+    462, 
+    475, 
+    491, 
+    503, 
+    518, 
+    529, 
+    541, 
+    556, 
+    574, 
+    586, 
+    601, 
+    612, 
+    624, 
+    639, 
+    652, 
+    668, 
+    680, 
+    695, 
+    706, 
+    718, 
+    733, 
+    749, 
+    761, 
+    784
+  ], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    8, 
+    9, 
+    10, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    18, 
+    19, 
+    20, 
+    21, 
+    22, 
+    23, 
+    24, 
+    25, 
+    26, 
+    27, 
+    28, 
+    29, 
+    30, 
+    31, 
+    32, 
+    33, 
+    34, 
+    35, 
+    36, 
+    37, 
+    38, 
+    39, 
+    40, 
+    41, 
+    42, 
+    43, 
+    44, 
+    45, 
+    46, 
+    47, 
+    48, 
+    49, 
+    50, 
+    51, 
+    52, 
+    53, 
+    54, 
+    55, 
+    56, 
+    57, 
+    58, 
+    59, 
+    60, 
+    61, 
+    62, 
+    63, 
+    64, 
+    65, 
+    66, 
+    67, 
+    68, 
+    69, 
+    70, 
+    71, 
+    72, 
+    73, 
+    74, 
+    75, 
+    76, 
+    77, 
+    78, 
+    79, 
+    80, 
+    81, 
+    82, 
+    83, 
+    84, 
+    85, 
+    86, 
+    87, 
+    88, 
+    89, 
+    90, 
+    91, 
+    92, 
+    93, 
+    94, 
+    95, 
+    96, 
+    97, 
+    98, 
+    99, 
+    100, 
+    101, 
+    102, 
+    103, 
+    104, 
+    105, 
+    106, 
+    107, 
+    108, 
+    109, 
+    110, 
+    111, 
+    112, 
+    113, 
+    114, 
+    115, 
+    116, 
+    117, 
+    118, 
+    119, 
+    120, 
+    121, 
+    122, 
+    123, 
+    124, 
+    125, 
+    126, 
+    127, 
+    128, 
+    129, 
+    130, 
+    131, 
+    132, 
+    133, 
+    134, 
+    135, 
+    136, 
+    137, 
+    138, 
+    139, 
+    140, 
+    141, 
+    142, 
+    143, 
+    144, 
+    145, 
+    146, 
+    147, 
+    148, 
+    149, 
+    150, 
+    151, 
+    152, 
+    153, 
+    154, 
+    155, 
+    156, 
+    157, 
+    158, 
+    159, 
+    160, 
+    161, 
+    162, 
+    163, 
+    164, 
+    165, 
+    166, 
+    167, 
+    168, 
+    169, 
+    170, 
+    171, 
+    172, 
+    173, 
+    174, 
+    175, 
+    176, 
+    177, 
+    178, 
+    179, 
+    180, 
+    181, 
+    182, 
+    183, 
+    184, 
+    185, 
+    186, 
+    187, 
+    188, 
+    189, 
+    190, 
+    191, 
+    192, 
+    193, 
+    194, 
+    195, 
+    196, 
+    197, 
+    198, 
+    199, 
+    200, 
+    201, 
+    202, 
+    203, 
+    204, 
+    205, 
+    206, 
+    207, 
+    208, 
+    209, 
+    210, 
+    211, 
+    212, 
+    213, 
+    214, 
+    215, 
+    216, 
+    217, 
+    218, 
+    219, 
+    220, 
+    221, 
+    222, 
+    223, 
+    224, 
+    225, 
+    226, 
+    227, 
+    228, 
+    229, 
+    230, 
+    231, 
+    232, 
+    233, 
+    234, 
+    235, 
+    236, 
+    237, 
+    238, 
+    239, 
+    240, 
+    241, 
+    242, 
+    243, 
+    244, 
+    245, 
+    246, 
+    247, 
+    248, 
+    249, 
+    250, 
+    251, 
+    252, 
+    253, 
+    254, 
+    255, 
+    256, 
+    257, 
+    258, 
+    259, 
+    260, 
+    261, 
+    262, 
+    263, 
+    264, 
+    265, 
+    266, 
+    267, 
+    268, 
+    269, 
+    270, 
+    271, 
+    272, 
+    273, 
+    274, 
+    275, 
+    276, 
+    277, 
+    278, 
+    279, 
+    280, 
+    281, 
+    282, 
+    283, 
+    284, 
+    285, 
+    286, 
+    287, 
+    288, 
+    289, 
+    290, 
+    291, 
+    292, 
+    293, 
+    294, 
+    295, 
+    296, 
+    297, 
+    298, 
+    299, 
+    300, 
+    301, 
+    302, 
+    303, 
+    304, 
+    305, 
+    306, 
+    307, 
+    308, 
+    309, 
+    310, 
+    311, 
+    312, 
+    313, 
+    314, 
+    315, 
+    316, 
+    317, 
+    318, 
+    319, 
+    320, 
+    321, 
+    322, 
+    323, 
+    324, 
+    325, 
+    326, 
+    327, 
+    328, 
+    329, 
+    330, 
+    331, 
+    332, 
+    333, 
+    334, 
+    335, 
+    336, 
+    337, 
+    338, 
+    339, 
+    340, 
+    341, 
+    342, 
+    343, 
+    344, 
+    345, 
+    346, 
+    347, 
+    348, 
+    349, 
+    350, 
+    351, 
+    352, 
+    353, 
+    354, 
+    355, 
+    356, 
+    357, 
+    358, 
+    359, 
+    360, 
+    361, 
+    362, 
+    363, 
+    364, 
+    365, 
+    366, 
+    367, 
+    368, 
+    369, 
+    370, 
+    371, 
+    372, 
+    373, 
+    374, 
+    375, 
+    376, 
+    377, 
+    378, 
+    379, 
+    380, 
+    381, 
+    382, 
+    383, 
+    384, 
+    385, 
+    386, 
+    387, 
+    388, 
+    389, 
+    390, 
+    391, 
+    392, 
+    393, 
+    394, 
+    395, 
+    396, 
+    397, 
+    398, 
+    399, 
+    400, 
+    401, 
+    402, 
+    403, 
+    404, 
+    405, 
+    406, 
+    407, 
+    408, 
+    409, 
+    410, 
+    411, 
+    412, 
+    413, 
+    414, 
+    415, 
+    416, 
+    417, 
+    418, 
+    419, 
+    420, 
+    421, 
+    422, 
+    423, 
+    424, 
+    425, 
+    426, 
+    427, 
+    428, 
+    429, 
+    430, 
+    431, 
+    432, 
+    433, 
+    434, 
+    435, 
+    436, 
+    437, 
+    438, 
+    439, 
+    440, 
+    441, 
+    442, 
+    443, 
+    444, 
+    445, 
+    446, 
+    447, 
+    448, 
+    449, 
+    450, 
+    451, 
+    452, 
+    453, 
+    454, 
+    455, 
+    456, 
+    457, 
+    458, 
+    459, 
+    460, 
+    461, 
+    462, 
+    463, 
+    464, 
+    465, 
+    466, 
+    467, 
+    468, 
+    469, 
+    470, 
+    471, 
+    472, 
+    473, 
+    474, 
+    475, 
+    476, 
+    477, 
+    478, 
+    479, 
+    480, 
+    481, 
+    482, 
+    483, 
+    484, 
+    485, 
+    486, 
+    487, 
+    488, 
+    489, 
+    490, 
+    491, 
+    492, 
+    493, 
+    494, 
+    495, 
+    496, 
+    497, 
+    498, 
+    499, 
+    500, 
+    501, 
+    502, 
+    503, 
+    504, 
+    505, 
+    506, 
+    507, 
+    508, 
+    509, 
+    510, 
+    511, 
+    512, 
+    513, 
+    514, 
+    515, 
+    516, 
+    517, 
+    518, 
+    519, 
+    520, 
+    521, 
+    522, 
+    523, 
+    524, 
+    525, 
+    526, 
+    527, 
+    528, 
+    529, 
+    530, 
+    531, 
+    532, 
+    533, 
+    534, 
+    535, 
+    536, 
+    537, 
+    538, 
+    539, 
+    540, 
+    541, 
+    542, 
+    543, 
+    544, 
+    545, 
+    546, 
+    547, 
+    548, 
+    549, 
+    550, 
+    551, 
+    552, 
+    553, 
+    554, 
+    555, 
+    556, 
+    557, 
+    558, 
+    559, 
+    560, 
+    561, 
+    562, 
+    563, 
+    564, 
+    565, 
+    566, 
+    567, 
+    568, 
+    569, 
+    570, 
+    571, 
+    572, 
+    573, 
+    574, 
+    575, 
+    576, 
+    577, 
+    578, 
+    579, 
+    580, 
+    581, 
+    582, 
+    583, 
+    584, 
+    585, 
+    586, 
+    587, 
+    588, 
+    589, 
+    590, 
+    591, 
+    592, 
+    593, 
+    594, 
+    595, 
+    596, 
+    597, 
+    598, 
+    599, 
+    600, 
+    601, 
+    602, 
+    603, 
+    604, 
+    605, 
+    606, 
+    607, 
+    608, 
+    609, 
+    610, 
+    611, 
+    612, 
+    613, 
+    614, 
+    615, 
+    616, 
+    617, 
+    618, 
+    619, 
+    620, 
+    621, 
+    622, 
+    623, 
+    624, 
+    625, 
+    626, 
+    627, 
+    628, 
+    629, 
+    630, 
+    631, 
+    632, 
+    633, 
+    634, 
+    635, 
+    636, 
+    637, 
+    638, 
+    639, 
+    640, 
+    641, 
+    642, 
+    643, 
+    644, 
+    645, 
+    646, 
+    647, 
+    648, 
+    649, 
+    650, 
+    651, 
+    652, 
+    653, 
+    654, 
+    655, 
+    656, 
+    657, 
+    658, 
+    659, 
+    660, 
+    661, 
+    662, 
+    663, 
+    664, 
+    665, 
+    666, 
+    667, 
+    668, 
+    669, 
+    670, 
+    671, 
+    672, 
+    673, 
+    674, 
+    675, 
+    676, 
+    677, 
+    678, 
+    679, 
+    680, 
+    681, 
+    682, 
+    683, 
+    684, 
+    685, 
+    686, 
+    687, 
+    688, 
+    689, 
+    690, 
+    691, 
+    692, 
+    693, 
+    694, 
+    695, 
+    696, 
+    697, 
+    698, 
+    699, 
+    700, 
+    701, 
+    702, 
+    703, 
+    704, 
+    705, 
+    706, 
+    707, 
+    708, 
+    709, 
+    710, 
+    711, 
+    712, 
+    713, 
+    714, 
+    715, 
+    716, 
+    717, 
+    718, 
+    719, 
+    720, 
+    721, 
+    722, 
+    723, 
+    724, 
+    725, 
+    726, 
+    727, 
+    728, 
+    729, 
+    730, 
+    731, 
+    732, 
+    733, 
+    734, 
+    735, 
+    736, 
+    737, 
+    738, 
+    739, 
+    740, 
+    741, 
+    742, 
+    743, 
+    744, 
+    745, 
+    746, 
+    747, 
+    748, 
+    749, 
+    750, 
+    751, 
+    752, 
+    753, 
+    754, 
+    755, 
+    756, 
+    757, 
+    758, 
+    759, 
+    760, 
+    761, 
+    762, 
+    763, 
+    764, 
+    765, 
+    766, 
+    767, 
+    768, 
+    769, 
+    770, 
+    771, 
+    772, 
+    773, 
+    774, 
+    775, 
+    776, 
+    777, 
+    778, 
+    779, 
+    780, 
+    781, 
+    782, 
+    783, 
+    784, 
+    785, 
+    786, 
+    787, 
+    788, 
+    789, 
+    790, 
+    791, 
+    792, 
+    793, 
+    794, 
+    795, 
+    796, 
+    797, 
+    798
+  ], 
+  "heads": [[797, 0, 0]]
+}
